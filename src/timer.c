@@ -1,6 +1,8 @@
 #include <arch/timer.h>
 #include <kernel/panic.h>
 #include <arch/csr.h>
+#include <kernel/trap.h>     
+#include <kernel/serial.h>  
 
 static volatile bool alarm_on;
 static volatile u64 next_alarm;
